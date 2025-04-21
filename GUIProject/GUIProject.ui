@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry"><rect><x>0</x><y>0</y><width>400</width><height>400</height></rect></property>
+  <property name="windowTitle"><string>Image Toggle</string></property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="toggleButton">
+      <property name="text"><string>Change Image</string></property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="imageLabel">
+      <property name="alignment"><set>Qt::AlignCenter</set></property>
+      <property name="scaledContents"><bool>true</bool></property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
