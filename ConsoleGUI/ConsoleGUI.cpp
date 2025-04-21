@@ -1,6 +1,5 @@
 #include <iostream>
-#include <fstream>
-#include "Game.h"
+#include "GameConsole.h"
 
 int main() {
 	Game* instance = Game::getInstance();

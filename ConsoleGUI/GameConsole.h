@@ -1,12 +1,13 @@
 #pragma once
 #include <vector>
+#include "GameManager.h"
 #include "Character.h"
 
 class Game
 {
 public:
 	static Game* getInstance();
-
+	
 	~Game() {};
 
 	void initialize();
@@ -24,8 +25,10 @@ private:
 
 	void printGameEnd();
 
+
 private:
 	static Game* instance;
+	GameManager* manager;
 	static const int enemiesCount;
 
 	static const std::string grass;
@@ -34,9 +37,9 @@ private:
 
 	static const std::vector<std::string> gameOver;
 	static const std::vector<std::string> youWin;
-
-private:
-	Character mainCharacter;
-	std::vector<Character> enemies;
+	
+	static std::string loadGrass(const std::string& path);
+	static std::vector<std::string> loadDrawing(const std::string& path);
+	//static std::vector<std::vector<std::string>> loadEnemiesDrawings();
 };
 

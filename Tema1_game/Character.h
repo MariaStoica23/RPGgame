@@ -37,6 +37,8 @@ public:
 	bool operator==(const Character& other) const;
 	bool operator!=(const Character& other) const;
 
+	Character& operator=(const Character& other);
+
 	Character& operator++();
 	Character operator++(int);
 

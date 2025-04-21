@@ -123,6 +123,19 @@ bool Character::operator!=(const Character& other) const {
     return !(*this == other);
 }
 
+Character& Character::operator=(const Character& other) {
+    if (this != &other) {
+        this->name = other.name;
+        this->lvl = other.lvl;
+        this->attackDamage = other.attackDamage;
+        this->defence = other.defence;
+        this->healthPoints = other.healthPoints;
+        this->remainingHealthPoints = other.remainingHealthPoints;
+        this->healthPotionsCount = other.healthPotionsCount;
+    }
+    return *this;
+}
+
 Character& Character::operator++() {
     setLvl(lvl + 1);
     setAttackDamage(attackDamage + baseAttackDamage);
