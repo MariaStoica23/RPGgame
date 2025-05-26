@@ -77,7 +77,7 @@ The player controls a main hero character, fighting enemies one-by-one, with opt
 
 ## 👤 Author
 
-> Project created by **[Your Name]**  
+> Project created by Stoica Anna Maria.
 > Developed as a fun and educational exercise in C++ programming, OOP principles, and console-based interaction.
 
 ---
